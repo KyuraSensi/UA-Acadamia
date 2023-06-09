@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Tyresse news section */
+.campus {
+  background-image: url(breaking\ news.gif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 200vh;
+}
+.campus-head {
+  text-align: center;
+  color: white;
+}
+#campus-heading {
+  font-size: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-top: 80px;
+  color: white;
+}
+#campus-quotes {
+  font-size: 25px;
+  font-style: italic;
+}
+.first-news-block {
+  margin: 0 30px;
+  height: 890px;
+  width: 50%;
+}
+.news {
+  display: flex;
+  justify-content: space-between;
+}
+.first-news-block h1 {
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  margin-left: 90px;
+  text-align: center;
+}
+.first-sport-news {
+  background-image: url(Miyu\ Kato.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 460px;
+  padding: 0 10px;
+}
+.first-news-block a {
+  text-decoration: none;
+  color: white;
+}
+.first-news-block a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.first-sport-news h2 {
+  margin-top: 6.5%;
+}
+.first-sport-news h3 {
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.second {
+  display: flex;
+  justify-content: space-between;
+}
+.second-sport-news {
+  margin-top: 40px;
+  width: 48%;
+  height: 30%;
+  background-image: url(Guardiola.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 10px;
+}
+.guardiola h2 {
+  margin-top: 70%;
+}
+.third-sport-news3 {
+  margin-top: 40px;
+  width: 48%;
+  background-image: url(morent.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.morant h2 {
+  margin-top: 55%;
+  padding: 0 10px;
+}
+.fourth-sport-news {
+  background-image: url(tesla.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 460px;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+.fourth-news-block a {
+  text-decoration: none;
+  color: white;
+}
+.fourth-news-block a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.fourth-sport-news h3 {
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.security-sport-news {
+
+  margin-top: 40px;
+  width: 48%;
+  height: 30%;
+  background-image: url(security.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.security h2 {
+  margin-top: 46%;
+  padding: 0 10px;
+}
+.trump-sport-news3 {
+
+  margin-top: 40px;
+  width: 48%;
+  background-image: url(trump.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.trump h2 {
+  margin-top: 46%;
+  padding: 0 10px;
+}
+/* Tyresse news section End*/
