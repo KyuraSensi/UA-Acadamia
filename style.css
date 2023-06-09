@@ -607,3 +607,243 @@ margin-left:5%;
 margin-top:2%;
 font-size:larger;
 }
+
+
+/* Stoic's NavBar Syle (Start) */
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #00beef;
+    /* opacity: 0.4; */
+    position: fixed;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    top: 0;
+}
+
+nav svg {
+width: 25px;
+height: 25px;
+margin-left: -32px;
+}
+
+.log{
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    margin-left: 12px;
+    
+}
+
+.log:hover{
+    cursor: pointer;
+    background-color: maroon;    
+}
+
+.links{
+    /* border: 7px solid black; */
+    width: 60%;
+    height: 120px;
+    margin-left: 174px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input{
+    width: 263px;
+    height: 50px;
+    border-radius: 35px;
+    padding-left: 64px;
+    margin-left: 34px;
+    outline: none;
+    border: none;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    line-height: 1.2rem;
+    font-weight: 900;
+}
+
+.first{
+    margin-left: 24px;
+}
+
+.links a:hover{
+    color: palegreen;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 8px;
+    transition: 3s;
+    text-transform: capitalize;
+    font-style:italic ;
+    
+
+}
+
+/* Stoic's navbar end */
+
+/* STOIC'S FOOTER  */
+footer{
+    width: 100%;
+    height: 550px;
+    background-color: #00beef;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 188px;
+    flex-direction: column;
+    position: relative;
+}
+
+    .informercials{
+        width: 60%;
+        justify-content: space-between;
+        margin-left: 352px;
+        margin-top: -486px;
+        border-bottom: 1px solid white;
+        padding-bottom:18px;
+}
+
+.SECT1{
+    width: 20%;
+    height: 450px;
+    margin-top: -40px;
+
+}
+
+
+.SECT11{
+    width: 100%;
+    height: 450px;
+}
+
+label{
+    width: 70%;
+    height: 125px;
+    border-radius: 50%;
+    color: whitesmoke;
+    font-size: 22px;
+    animation: jump 8s linear  infinite;
+}
+
+@keyframes jump {
+    0%{
+        transform: translateY(0deg);
+    }
+
+    25%{
+        transform: translateY(-90deg);
+    }
+
+    50%{
+        transform: translateY(0deg);
+    }
+
+    75%{
+        transform: translateY(180deg);
+    }
+
+    100%{
+        transform: translateY(0deg);
+    }
+}
+
+#subscribe{
+    width: 349px;
+    margin-left: 250px;
+}
+
+
+.SECT2{
+    display: flex;
+    /* border: 1px solid maroon; */
+    width:79.8%;
+    height: 425px;
+    margin-left: 255px;
+    margin-top: -202px; 
+    justify-content: space-evenly;   
+}
+
+.branches h4{
+    color: whitesmoke;
+    font-size: 21px;
+    
+}
+
+.branches p{
+    color: whitesmoke;
+    opacity: 0.65;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.branches .branch1{
+    margin-top: 34px;
+}
+
+.branches a{
+    text-decoration: none;
+    color: white;
+}
+
+.edu{
+    display: flex;
+    margin-top: 32px;
+    
+
+}
+
+.edu img{
+    width: 85px;
+    height: 85px;
+}
+
+
+.fnb{
+    display: flex;
+    margin-top: 32px;
+
+}
+.fnb img{
+    width: 85px;
+    height: 85px;
+
+}
+.socials{
+    margin-top: 375px;
+    width: 100%;
+    height: 80px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials svg{
+    width: 64px;
+    height: 34px;
+}
+
+.socials svg:hover{
+    color: white;
+    transition: 2.5s;
+}
+
+.copyright{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+/* STOC'S FOOTER END */
