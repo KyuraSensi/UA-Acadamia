@@ -386,65 +386,6 @@ article{
     height: 400px;
 }
 
-@media only screen and (max-width: 766px) {
-    .head-flex{
-        display: flex;
-        justify-content: center;
-    }
-    .head-two img{
-        width: 100px;
-        height: 120px;
-        position: absolute;
-        margin-top: -130px;
-        /* border-bottom: 3px solid rgba(0, 0, 0, 0.163); */
-    }
-    .article-text{
-        width: 100%;
-        height: 80%;
-        padding: 50px;
-        padding-top: 30px;
-    }
-    .article-text p{
-        font-size: 18px;
-    }
-    .sec-1{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sec-2{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sec-3{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sec-4{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sec-5{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .article-text button{
-        margin-top: 15%;
-        width: 30%;
-        height: 7.5%;
-        border: none;
-        background-color: rgba(0, 0, 0, 0.757);
-        color: white;
-        border-radius: 10px;
-        cursor: pointer;
-        margin: 0 20px;
-    }
-    .article-imgs{
-        width: 100%;
-        height: 70%;
-        transition: all .5s;
-        cursor: zoom-in;
-    }
-}
 
 /* Kyu: Home Page CSS Start */
 
@@ -527,7 +468,7 @@ form p > a{
 .header{
     /* border:1px solid red; */
     width:10%;
-    margin:2%;
+    margin:9% 2% 2% 2%;
     height:70px;
 }
 
@@ -601,11 +542,11 @@ hr{
 }
 
 .closing-text{
-/* border:1px solid red; */
-width:90%;
-margin-left:5%;
-margin-top:2%;
-font-size:larger;
+    /* border:1px solid red; */
+    width:90%;
+    margin-left:5%;
+    margin-top:2%;
+    font-size:larger;
 }
 
 
@@ -624,9 +565,9 @@ nav{
 }
 
 nav svg {
-width: 25px;
-height: 25px;
-margin-left: -32px;
+    width: 25px;
+    height: 25px;
+    margin-left: -32px;
 }
 
 .log{
@@ -682,7 +623,7 @@ input{
     text-transform: capitalize;
     font-style:italic ;
     
-
+    
 }
 
 /* Stoic's navbar end */
@@ -716,26 +657,26 @@ footer{
         margin-top: -486px;
         border-bottom: 1px solid white;
         padding-bottom:18px;
-}
-
-.SECT1{
-    width: 20%;
-    height: 450px;
-    margin-top: -40px;
-
-}
-
-
-.SECT11{
-    width: 100%;
-    height: 450px;
-}
-
-label{
-    width: 70%;
-    height: 125px;
-    border-radius: 50%;
-    color: whitesmoke;
+    }
+    
+    .SECT1{
+        width: 20%;
+        height: 450px;
+        margin-top: -40px;
+        
+    }
+    
+    
+    .SECT11{
+        width: 100%;
+        height: 450px;
+    }
+    
+    label{
+        width: 70%;
+        height: 125px;
+        border-radius: 50%;
+        color: whitesmoke;
     font-size: 22px;
     animation: jump 8s linear  infinite;
 }
@@ -748,7 +689,7 @@ label{
     25%{
         transform: translateY(-90deg);
     }
-
+    
     50%{
         transform: translateY(0deg);
     }
@@ -756,7 +697,7 @@ label{
     75%{
         transform: translateY(180deg);
     }
-
+    
     100%{
         transform: translateY(0deg);
     }
@@ -804,7 +745,7 @@ label{
     display: flex;
     margin-top: 32px;
     
-
+    
 }
 
 .edu img{
@@ -816,12 +757,12 @@ label{
 .fnb{
     display: flex;
     margin-top: 32px;
-
+    
 }
 .fnb img{
     width: 85px;
     height: 85px;
-
+    
 }
 .socials{
     margin-top: 375px;
@@ -857,3 +798,69 @@ label{
 }
 
 /* STOC'S FOOTER END */
+
+
+@media only screen and (max-width: 766px) {
+
+    /* .header > h2{
+
+    } */
+
+    .head-flex{
+        display: flex;
+        justify-content: center;
+    }
+    .head-two img{
+        width: 100px;
+        height: 120px;
+        position: absolute;
+        margin-top: -130px;
+        /* border-bottom: 3px solid rgba(0, 0, 0, 0.163); */
+    }
+    .article-text{
+        width: 100%;
+        height: 80%;
+        padding: 50px;
+        padding-top: 30px;
+    }
+    .article-text p{
+        font-size: 18px;
+    }
+    .sec-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-5{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article-text button{
+        margin-top: 15%;
+        width: 30%;
+        height: 7.5%;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.757);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+    .article-imgs{
+        width: 100%;
+        height: 70%;
+        transition: all .5s;
+        cursor: zoom-in;
+    }
+}
