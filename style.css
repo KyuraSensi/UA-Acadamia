@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 /* Kyu: Home Page CSS Start */
-.nav{
+/* .nav{
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@
     80%{
         margin-top: -42px;
     }
-}
+} */
                                                                             /* Kyu: Pop Up Start */
                                                                             
 
@@ -75,12 +75,80 @@
     margin: 30px 10px 0 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+                                        /* Kyu's Updates: Start */
+
+/* Kyu's Loader: Start */
+.load{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.disappear{
+    animation: vanish 1s forwards;
+}
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/* Kyu's Loader: End */
+
+/* Kyu cursor: Start */
+
+.cursor{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #00beef;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+
+/* Kyu cursor: End */
+
+/* pop up button START*/
+#icon{
+    font-size: 40px;
+    height: 10%;
+    margin-top: 5px;
+    width: 100.5%;
+    text-align: end;
+    z-index: 400;
+}
+#icon span{
+    z-index: 400;
+    padding: 0px 8px;
+    border-radius: 70%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .1s all;
+}
+#icon span:hover{
+    z-index: 400;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+/* pop up button END */
+
 .popup{
+    z-index: 100;
+    display: none;
+    top: 0;
     border: 1px solid red;
+    margin: 15px auto;
     height: 95vh;
-    width: 95%;
-    position: absolute;
-    display: flex;
+    width: 100%;
+    display: block;
+    position: fixed;
     justify-content: center;
     padding-bottom: 7%;
     padding-right: 1%;
@@ -93,7 +161,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 1s;
-    display: none;
 }
 @keyframes popup {
     0%{
@@ -103,13 +170,16 @@
 }
 .popup-text{
     position: relative;
-    border: 3px ridge black;
-    /* box-shadow: 2px  2px 50px rgba(250, 146, 43, 0.427); */
+    border: 1px solid rgb(58, 57, 57);
+    box-shadow: 2px 3px 0px black;
     background-color: rgb(244, 162, 132);
-    padding: 60px;
-    height: 230px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
-    font-size: 40px;
+    font-size: 33px;
+    margin: 0px auto 0 auto;
     color: white;
     animation: popupname 3s;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -126,7 +196,78 @@
         color: rgba(0, 0, 0, 0);
     }
 }
-                                                                /* Kyu: Pop Up End */
+ /* Kyu: Pop Up End */
+
+ /* Kyu's MQ: Start */
+
+ @media only screen and (max-width: 766px) {
+
+    
+
+    .head-flex{
+        display: flex;
+        justify-content: center;
+    }
+    .head-two img{
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        margin-top: -130px;
+        /* border-bottom: 3px solid rgba(0, 0, 0, 0.163); */
+    }
+    .article-text{
+        width: 100%;
+        height: 80%;
+        padding: 50px;
+        padding-top: 30px;
+    }
+    .article-text p{
+        font-size: 18px;
+    }
+    .sec-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-5{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article-text button{
+        margin-top: 15%;
+        width: 30%;
+        height: 7.5%;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.757);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+    .article-imgs{
+        width: 100%;
+        height: 70%;
+        transition: all .5s;
+        cursor: zoom-in;
+    }
+}
+
+/* Kyu's MQ: End */
+
+                                        /* Kyu's Updates: Start */
+
+
 section{
     height: 90vh;
 }
@@ -246,7 +387,7 @@ article{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.article-imgs-1{
+ .article-imgs-1{
     animation: imgsOne 35s infinite;
 }
 .article-imgs-2{
@@ -321,7 +462,7 @@ article{
     80%{
         background-image: url('insperational/picTwo.jpeg');
     }
-}
+} 
 .sec-1{
     border-bottom: 1px solid rgba(187, 186, 186, 0.36);
     text-align: center;
@@ -386,70 +527,26 @@ article{
     height: 400px;
 }
 
-@media only screen and (max-width: 766px) {
-    .head-flex{
-        display: flex;
-        justify-content: center;
-    }
-    .head-two img{
-        width: 100px;
-        height: 120px;
-        position: absolute;
-        margin-top: -130px;
-        /* border-bottom: 3px solid rgba(0, 0, 0, 0.163); */
-    }
-    .article-text{
-        width: 100%;
-        height: 80%;
-        padding: 50px;
-        padding-top: 30px;
-    }
-    .article-text p{
-        font-size: 18px;
-    }
-    .sec-1{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sec-2{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sec-3{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sec-4{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sec-5{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .article-text button{
-        margin-top: 15%;
-        width: 30%;
-        height: 7.5%;
-        border: none;
-        background-color: rgba(0, 0, 0, 0.757);
-        color: white;
-        border-radius: 10px;
-        cursor: pointer;
-        margin: 0 20px;
-    }
-    .article-imgs{
-        width: 100%;
-        height: 70%;
-        transition: all .5s;
-        cursor: zoom-in;
-    }
-}
 
 /* Kyu: Home Page CSS Start */
 
 
+
+/*|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | Sanje's code start*/
+
+
+
+
+
+
+
+
+
 /* Sanje's code start*/
+
+
+/*|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | Sanje's code start*/
+
 
 /* sign-in page */
 
@@ -474,16 +571,31 @@ form{
     opacity: 80%;
     color:white;
     margin-bottom:15%;
+    font-size:10px;
+}
+
+form > #email1,#pass1{
+    margin-left:-2px;
+    width:50%;
+    text-align:center;
+
+}
+
+form > #pass1,#email1{
+    margin-left:-2px;
+    width:50%;
 }
 
 form p > a{
     color:white;
     text-decoration:none;
-}
+} 
+
+/* |    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |End Of Sign in Page */
 
 /* log in page */
 
-#log-in-page{
+/* #log-in-page{
     margin-top:15%;
     text-align:center;
     display: flex;
@@ -518,16 +630,26 @@ form p > a{
     width:80px;
     height:25px;
     color:black;
-}
+} */
 
+/* |    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |End Of Log in Page */
 
 
 /* About Page */
 
+
+#about-body{
+    background-color:rgba(0, 190, 239, 10%)
+}
+
 .header{
     /* border:1px solid red; */
+
+/* .header{ */
+    /* border:1px solid red;
+fixedHomeConflicts
     width:10%;
-    margin:2%;
+    margin:9% 2% 2% 2%;
     height:70px;
 }
 
@@ -544,18 +666,18 @@ form p > a{
 }
 
 .about-content{
-    display:flex;
+    display:flex; */
     /* align-items: center; */
     /* justify-content: space-evenly; */
     /* border:1px solid red; */
-}
-
+/* } */
+/* 
 #about-text{
     text-align:left;
-    letter-spacing: 1.1px;
+    letter-spacing: 1.1px; */
     /* padding */
     /* border:1px solid red; */
-    width: 67%;
+    /* width: 67%;
     margin-left:5%;
     font-size:18px;
     margin-top:0px;
@@ -564,12 +686,20 @@ form p > a{
 .but-links > button{
     width:350px;
     height:50px;
-    margin-top:1%;
-    background:lightblue;
+    margin-top:1.5%;
+    background:rgba(84, 19, 197, 0.459);
     border:1px solid white;
     border-radius:3px;
     font-size:17px; 
     margin-right: 40px;
+    box-shadow: 1px 1px 2.6px -0px black;
+}
+
+.but-links > button:hover{
+    background-color:lightseagreen;
+    color:white;
+    font-family:monospace;
+    letter-spacing: -1px;
 }
 
 h1{
@@ -577,20 +707,20 @@ h1{
     margin-bottom:1.1%;
 }
 
-hr{
+hr{ */
     /* margin-left:5%; */
-    width:10%;
+    /* width:10%;
     height:2px;
     background:black;
     margin:1% 0px 2.5% 5%;
     border-radius:3px;
     color:navy;
-}
-
+} */
+/* 
 .six-objectives{
-    margin-left:5%;
+    margin-left:5%; */
     /* border:1px solid red; */
-    width:55%;
+    /* width:55%;
     margin-bottom:1%;
 }
 
@@ -598,7 +728,179 @@ hr{
     margin-top:2px;
     font-size:21px;
     margin-left:5%;
+} */
+
+/* .closing-text{ */
+    /* border:1px solid red; */
+    /* width:90%;
+    margin-left:5%;
+    margin-top:2%;
+    font-size:larger;
+} */
+
+/* |    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |End Of About Page */
+
+
+/* Stoic's NavBar Syle (Start) */
+
+/* .nav{
+    width: 100%;
+    height: 49px;
+    background-color: #00beef;
+    /* opacity: 0.4; */
+    /* position: fixed; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* top: 0; */
+/* } */
+
+/* .nav svg {
+    width: 25px;
+    height: 25px;
+    margin-left: -32px;
+} */
+
+/* .log{
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    margin-left: 12px;
+    
+} */
+
+/* .log:hover{
+    cursor: pointer;
+    background-color: maroon;    
+} */
+
+
+.links{
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 30px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
+/* .links{
+    border: 7px solid black;
+    width: 60%;
+    height: 120px;
+    margin-left: 174px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+/* 
+
+input{
+    width: 30%;
+    height: 25px;
+    border-radius: 15px;
+    padding-left: 64px;
+    margin-left: 29%;
+    outline: none;
+    border: none;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    line-height: 1.2rem;
+    font-weight: 900;
+    letter-spacing:1px;
+}
+
+.first{
+    margin-left: 24px;
+}
+
+.links a:hover{
+    color: palegreen;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 8px;
+    transition: 3s;
+    text-transform: capitalize;
+    font-style:italic ;
+    
+    
+}  */
+
+header{
+    background-color: #00beef;
+    
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width:25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media (max-width:768px) {
+    .hamburger{
+        display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 
 .closing-text{
 /* border:1px solid red; */
@@ -683,6 +985,23 @@ input{
     font-style:italic ;
     
 
+
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #00beef;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-menu.active{
+    left: 0;
+}
+
 }
 
 /* Stoic's navbar end */
@@ -690,25 +1009,44 @@ input{
 /* STOIC'S FOOTER  */
 footer{
     width: 100%;
+
+    height: 50%;
+
+
     height: 550px;
+
     background-color: #00beef;
     display: flex;
+    border:1px solid red;
     justify-content: space-between;
-    margin-top: 2340px;
+    margin-top: 188px;
+
+    height: 50%;
+    background-color: #00beef;
+    display: flex;
+    border:1px solid red;
+    justify-content: space-between;
+    margin-top: 2640px;
+
     flex-direction: column;
-    /* position: relative; */
+    position: relative;
 }
+
+
 
 .footer2{
     width: 100%;
-    height: 550px;
-    background-color: #00beef;
+    height: 40px;
+    margin-top:6%;
+    border:1px solid red;
+    background-color: #00beef; 
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
     flex-direction: column;
-    /* position: relative; */
+    position: relative;
 }
+
     .informercials{
         width: 60%;
         justify-content: space-between;
@@ -716,6 +1054,7 @@ footer{
         margin-top: -486px;
         border-bottom: 1px solid white;
         padding-bottom:18px;
+
 }
 
 .SECT1{
@@ -738,6 +1077,32 @@ label{
     color: whitesmoke;
     font-size: 22px;
     animation: jump 8s linear  infinite;
+
+    }
+    
+    .SECT1{
+        width: 20%;
+        height: 450px;
+        margin-top: -40px;
+    }
+    
+    
+    .SECT11{
+        width: 100%;
+        height: 450px;
+    }
+    
+    label{
+        width: 70%;
+        height: 125px;
+        border-radius: 50%;
+        color: whitesmoke;
+
+    font-size: 22px;
+    animation: jump 8s linear  
+
+
+
 }
 
 @keyframes jump {
@@ -749,6 +1114,13 @@ label{
         transform: translateY(-90deg);
     }
 
+    
+
+
+
+
+
+
     50%{
         transform: translateY(0deg);
     }
@@ -757,9 +1129,21 @@ label{
         transform: translateY(180deg);
     }
 
+
+
+
     100%{
         transform: translateY(0deg);
     }
+
+
+    
+    100%{
+        transform: translateY(0deg);
+    }
+
+     font-size: 22px;
+
 }
 
 #subscribe{
@@ -769,22 +1153,59 @@ label{
 
 
 .SECT2{
+
+    border:1px solid red;
+    display: flex;
+    /* border: 1px solid maroon; */
+
+
     display: flex;
     /* border: 1px solid maroon; */
     width:79.8%;
     height: 425px;
     margin-left: 255px;
     margin-top: -202px; 
+
+    border:1px solid red;
+    display: flex;
+    /* border: 1px solid maroon; */
+
+    width:100%;
+    height: 45%;
+    /* margin-left: 255px; */
+    margin-top: 1%; 
+
     justify-content: space-evenly;   
 }
 
 .branches h4{
+
+    color: black;
+    /* font-size: 21px; */
+
+
     color: whitesmoke;
     font-size: 21px;
+
+    color: black;
+    /* font-size: 21px; */
+
+
     
 }
 
 .branches p{
+
+    color: black;
+    /* opacity: 0.65; */
+    /* font-size: 20px; */
+    padding: 1px;
+}
+
+.branches .branch1{
+    color:black;
+
+
     color: whitesmoke;
     opacity: 0.65;
     font-size: 20px;
@@ -793,17 +1214,38 @@ label{
 
 .branches .branch1{
     margin-top: 34px;
+
+    color: black;
+    /* opacity: 0.65; */
+    /* font-size: 20px; */
+    padding: 1px;
+}
+
+.branches .branch1{
+    color:black;
+
+
 }
 
 .branches a{
     text-decoration: none;
+
+    color: black;
+
+
     color: white;
+
+    color: black;
+
+
 }
 
 .edu{
     display: flex;
     margin-top: 32px;
     
+
+
 
 }
 
@@ -817,10 +1259,15 @@ label{
     display: flex;
     margin-top: 32px;
 
+
+
+    
+
 }
 .fnb img{
     width: 85px;
     height: 85px;
+
 
 }
 .socials{
@@ -828,6 +1275,16 @@ label{
     width: 100%;
     height: 80px;
     background-color: lightblue;
+
+    
+}
+.socials{
+
+    /* margin-top: 375px; */
+    /* width: 100%; */
+    /* height: 50px; */
+    /* background-color: lightblue; */
+
     display: flex;
     justify-content: space-between;
 }
@@ -839,7 +1296,18 @@ label{
 
 .socials svg:hover{
     color: white;
+
     transition: 2.5s;
+
+
+
+    transition: 0.1s;
+
+    transition: 2.5s;
+    cursor:pointer;
+
+
+
 }
 
 .copyright{
@@ -856,4 +1324,73 @@ label{
     padding: 12px;
 }
 
+
 /* STOC'S FOOTER END */
+
+/* STOC'S FOOTER END */
+
+
+/* 
+@media only screen and (max-width: 766px) {
+
+
+    .head-flex{
+        display: flex;
+        justify-content: center;
+    }
+    .head-two img{
+        width: 100px;
+        height: 120px;
+        position: absolute;
+        margin-top: -130px;
+        /* border-bottom: 3px solid rgba(0, 0, 0, 0.163); */
+    /* } */
+    .article-text{
+        width: 100%;
+        height: 80%;
+        padding: 50px;
+        padding-top: 30px;
+    }
+    .article-text p{
+        font-size: 18px;
+    }
+    .sec-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-5{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article-text button{
+        margin-top: 15%;
+        width: 30%;
+        height: 7.5%;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.757);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+
+    .article-imgs{
+        width: 100%;
+        height: 70%;
+        transition: all .5s;
+        cursor: zoom-in;
+    }
+
+
