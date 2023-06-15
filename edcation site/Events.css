@@ -1,0 +1,150 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+  
+  
+  /* Tyresse/Upcoming Section */
+
+
+body{
+    background-image: url(gif.gif);
+    background-size: cover;
+    background-position: 0.4px;
+}
+.upcoming-events{
+margin: 20px 7px 0;
+display: flex;
+justify-content: space-between;
+}
+#upcoming-heading{
+    font-family:Georgia, 'Times New Roman', Times, serif  ;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+#upcoming-heading-text{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.ucl-event{
+    background-image: url(ucl.jpg);    
+    background-size: cover;
+    height: 460px;
+    width: 24%;
+    margin-top: 4%;
+}
+
+.ucl-text{
+    background-color: rgba(239, 0, 0, 0.041);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: relative;
+    font-style: italic;
+    width: 90%;
+    height: 20%;
+    font-family:Georgia, 'Times New Roman', Times, serif  ;
+     text-align: center;
+}
+.ucl-text h3{
+    text-align: justify;
+    margin-left: 15px;
+    
+}
+.ucl-text h2{
+    font-family:Georgia, 'Times New Roman', Times, serif  ;
+    font-weight: 800;
+}
+.camp-event{
+    background-image: url(gif\(2\).gif);    
+    background-size: cover;
+    background-position: -250px;
+    height: 460px;
+    width: 24%;
+    margin-top: 4%;
+}
+
+.camp-text{
+    background-color: rgba(239, 0, 0, 0.041);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: relative;
+    width: 80%;
+    height: 20%;
+    font-family:Georgia, 'Times New Roman', Times, serif  ;
+    font-style: italic;
+     text-align: center;
+}
+.camp-text h3{
+    text-align: justify;
+    margin-left: 15px;    
+}
+.camp-text h2{
+    font-family:Georgia, 'Times New Roman', Times, serif  ;
+    font-weight: 800;
+}
+
+.festive-event{
+    background-image: url(OIP.jpeg);    
+    background-size: cover;
+    height: 460px;
+    width: 24%;
+    margin-top: 4%;
+}
+
+.festive-text{
+    background-color: rgba(239, 0, 0, 0.041);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: relative;
+    width: 80%;
+    height: 20%;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif  ;
+     text-align: center;
+}
+.festive-text h3{
+    text-align: justify;
+    margin-left: 15px;
+}
+.festive-text h2{
+    font-family:Georgia, 'Times New Roman', Times, serif  ;
+    font-weight: 800;
+}
+.graduation-event{
+    background-image: url(gif\(3\).gif);    
+    background-size: cover;
+    background-position: -150px;
+    height: 460px;
+    width: 24%;
+    margin-top: 4%;
+}
+
+.graduation-text{
+    background-color: rgba(239, 0, 0, 0.041);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: relative;
+    font-style: italic;
+    width: 90%;
+    height: 20%;
+    font-family:Georgia, 'Times New Roman', Times, serif  ;
+     text-align: center;
+}
+.graduation-text h3{
+    text-align: justify;
+    margin-left: 15px;
+}
+.graduation-text h2{
+    font-family:Georgia, 'Times New Roman', Times, serif  ;
+    font-weight: 800;
+}
+/* Tyresse/Upcoming Section  end*/
