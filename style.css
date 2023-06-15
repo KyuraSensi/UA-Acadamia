@@ -390,7 +390,7 @@ article{
 /* Kyu: Home Page CSS Start */
 
 
-/* Sanje's code start*/
+/*|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | Sanje's code start*/
 
 /* sign-in page */
 
@@ -415,12 +415,27 @@ form{
     opacity: 80%;
     color:white;
     margin-bottom:15%;
+    font-size:10px;
+}
+
+form > #email1,#pass1{
+    margin-left:-2px;
+    width:50%;
+    text-align:center;
+
+}
+
+form > #pass1,#email1{
+    margin-left:-2px;
+    width:50%;
 }
 
 form p > a{
     color:white;
     text-decoration:none;
 }
+
+/* |    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |End Of Sign in Page */
 
 /* log in page */
 
@@ -461,9 +476,14 @@ form p > a{
     color:black;
 }
 
+/* |    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |End Of Log in Page */
 
 
 /* About Page */
+
+#about-body{
+    background-color:rgba(0, 190, 239, 10%)
+}
 
 .header{
     /* border:1px solid red; */
@@ -505,12 +525,20 @@ form p > a{
 .but-links > button{
     width:350px;
     height:50px;
-    margin-top:1%;
-    background:lightblue;
+    margin-top:1.5%;
+    background:rgba(84, 19, 197, 0.459);
     border:1px solid white;
     border-radius:3px;
     font-size:17px; 
     margin-right: 40px;
+    box-shadow: 1px 1px 2.6px -0px black;
+}
+
+.but-links > button:hover{
+    background-color:lightseagreen;
+    color:white;
+    font-family:monospace;
+    letter-spacing: -1px;
 }
 
 h1{
@@ -549,12 +577,14 @@ hr{
     font-size:larger;
 }
 
+/* |    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |End Of About Page */
+
 
 /* Stoic's NavBar Syle (Start) */
 
 nav{
     width: 100%;
-    height: 80px;
+    height: 49px;
     background-color: #00beef;
     /* opacity: 0.4; */
     position: fixed;
@@ -584,21 +614,21 @@ nav svg {
 }
 
 .links{
-    /* border: 7px solid black; */
-    width: 60%;
-    height: 120px;
-    margin-left: 174px;
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 30px;
+    margin-left: 10%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 input{
-    width: 263px;
-    height: 50px;
-    border-radius: 35px;
+    width: 30%;
+    height: 25px;
+    border-radius: 15px;
     padding-left: 64px;
-    margin-left: 34px;
+    margin-left: 29%;
     outline: none;
     border: none;
 }
@@ -608,6 +638,7 @@ input{
     text-decoration: none;
     line-height: 1.2rem;
     font-weight: 900;
+    letter-spacing:1px;
 }
 
 .first{
@@ -631,24 +662,27 @@ input{
 /* STOIC'S FOOTER  */
 footer{
     width: 100%;
-    height: 550px;
+    height: 50%;
     background-color: #00beef;
     display: flex;
+    border:1px solid red;
     justify-content: space-between;
     margin-top: 2340px;
     flex-direction: column;
-    /* position: relative; */
+    position: relative;
 }
 
 .footer2{
     width: 100%;
-    height: 550px;
-    background-color: #00beef;
+    height: 40px;
+    margin-top:6%;
+    border:1px solid red;
+    background-color: #00beef; 
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
     flex-direction: column;
-    /* position: relative; */
+    position: relative;
 }
     .informercials{
         width: 60%;
@@ -663,7 +697,6 @@ footer{
         width: 20%;
         height: 450px;
         margin-top: -40px;
-        
     }
     
     
@@ -678,7 +711,7 @@ footer{
         border-radius: 50%;
         color: whitesmoke;
     font-size: 22px;
-    animation: jump 8s linear  infinite;
+    animation: jump 8s linear  
 }
 
 @keyframes jump {
@@ -710,35 +743,36 @@ footer{
 
 
 .SECT2{
+    border:1px solid red;
     display: flex;
     /* border: 1px solid maroon; */
-    width:79.8%;
-    height: 425px;
-    margin-left: 255px;
-    margin-top: -202px; 
+    width:100%;
+    height: 45%;
+    /* margin-left: 255px; */
+    margin-top: 1%; 
     justify-content: space-evenly;   
 }
 
 .branches h4{
-    color: whitesmoke;
-    font-size: 21px;
+    color: black;
+    /* font-size: 21px; */
     
 }
 
 .branches p{
-    color: whitesmoke;
-    opacity: 0.65;
-    font-size: 20px;
-    padding: 8px;
+    color: black;
+    /* opacity: 0.65; */
+    /* font-size: 20px; */
+    padding: 1px;
 }
 
 .branches .branch1{
-    margin-top: 34px;
+    color:black;
 }
 
 .branches a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .edu{
@@ -765,10 +799,10 @@ footer{
     
 }
 .socials{
-    margin-top: 375px;
-    width: 100%;
-    height: 80px;
-    background-color: lightblue;
+    /* margin-top: 375px; */
+    /* width: 100%; */
+    /* height: 50px; */
+    /* background-color: lightblue; */
     display: flex;
     justify-content: space-between;
 }
@@ -780,7 +814,7 @@ footer{
 
 .socials svg:hover{
     color: white;
-    transition: 2.5s;
+    transition: 0.1s;
 }
 
 .copyright{
@@ -802,9 +836,6 @@ footer{
 
 @media only screen and (max-width: 766px) {
 
-    /* .header > h2{
-
-    } */
 
     .head-flex{
         display: flex;
