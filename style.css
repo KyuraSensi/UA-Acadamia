@@ -146,7 +146,7 @@
     margin: 15px auto;
     height: 95vh;
     width: 100%;
-    display: block;
+    /* display: block; */
     position: fixed;
     justify-content: center;
     padding-bottom: 7%;
