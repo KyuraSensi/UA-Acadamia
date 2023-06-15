@@ -361,7 +361,7 @@
 
     <!-- Kyu Pop-up: Start-->
 
-        <div class="popup">
+        <div class="popup" id="popup">
             <div id="icon">
                 <span>&Cross;</span>
             </div>
@@ -408,9 +408,10 @@
 
         // Kyu's Popup: Start
         let popupBtn = document.querySelector("#icon");
-        let popup = document.querySelector(".popup");
+        let popup = document.getElementById("popup");
 
         popupBtn.addEventListener("click", function(){
+            console.log("clicked")
             popup.style.display = "none"
         });
         // Kyu's Popup: End
