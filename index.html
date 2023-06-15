@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="home.js"></script>
     <title>Document</title>
 </head>
 
@@ -96,10 +97,15 @@
             </div>
 
         </div>
-    </nav>
+    </nav> -->
 
     <main>
+
         <section class="heading">
+
+        
+
+
 
             <div class="popup">
                 <h1 class="popup-text">
@@ -108,6 +114,7 @@
 
                 </h1>
             </div>
+
 
 
             <div class="head-flex">
@@ -147,12 +154,12 @@
                     </div>
 
                 </div>
-                <div class="article-imgs article-imgs-1">
+                <div class="article-imgs article-imgs-1 output1">
                 </div>
             </article>
 
             <article class="sec-2">
-                <div class="article-imgs article-imgs-2">
+                <div class="article-imgs article-imgs-2 output2">
                 </div>
                 <div class="article-text">
                     <h3>Uniform</h3>
@@ -184,12 +191,12 @@
                         <button class="purchase">Apply</button>
                     </div>
                 </div>
-                <div class="article-imgs article-imgs-3">
+                <div class="article-imgs article-imgs-3 output3">
                 </div>
             </article>
 
             <article class="sec-4">
-                <div class="article-imgs article-imgs-4">
+                <div class="article-imgs article-imgs-4 output4">
                 </div>
                 <div class="article-text">
                     <h3>Get Original Novels and Dramas</h3>
@@ -220,7 +227,7 @@
                         <button class="donate">Donate</button>
                     </div>
                 </div>
-                <div class="article-imgs article-imgs-5">
+                <div class="article-imgs article-imgs-5 output5">
                 </div>
             </article>
         </section>
@@ -343,6 +350,82 @@
 
 
 
+
+
+
+
+                                        <!-- Kyu's updates Start -->
+
+    <!-- Kyu Pop-up: Start-->
+
+        <div class="popup">
+            <div id="icon">
+                <span>&Cross;</span>
+            </div>
+            <h1 class="popup-text">
+                Welcome, To UA Acadamia
+                <br>
+                    
+            </h1>
+        </div>
+
+    <!-- Kyu Pop-up: End-->
+
+        <div class="load">
+        <img src="Logo/Circle Loading Animation.gif" alt="Loader-gif" width="100%" height="100%">
+        </div>
+
+    <!-- Kyu's Cursor: Start -->
+
+        <div class="cursor"></div>
+
+    <!-- Kyu's Cursor: End -->
+
+    <!-- Kyu's JS: Start -->
+    <script>
+
+        
+
+        // Kyu's Loader: Start
+        let loader = document.querySelector(".load");
+
+        window.addEventListener("load",vanish) 
+
+        function vanish(){
+            loader.classList.add("disappear")
+        }
+        // Kyu's Loader: End
+
+        // Kyu's Cursor: Start
+        var cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", function(e){
+        cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;"
+        });
+        // Kyu's Cursor: End
+
+        // Kyu's Popup: Start
+        let popupBtn = document.querySelector("#icon");
+        let popup = document.querySelector(".popup");
+
+        popupBtn.addEventListener("click", function(){
+            popup.style.display = "none"
+        });
+        // Kyu's Popup: End
+
+        // Kyu's slider images: Start 
+
+        let tutorimgs = ['<img src="Tutors/tutOne.jpeg">','<img src="Tutors/tutTwo.png" alt="imgs">','<img src="Tutors/tutThree.jpeg" alt="imgs">','<img src="Tutors/tutFour.jpeg" alt="imgs">']
+        let bookimgs = ['<img src="Books/bookOne.jpeg" alt="imgs">','<img src="Books/bookTwo.jpeg" alt="imgs">','<img src="Books/bookThree.jpeg" alt="imgs">','<img src="insperational/picOne.png" alt="imgs">','<img src="insperational/picTwo.jpeg" alt="imgs">','<img src="insperational/picTwo.jpeg" alt="imgs">']
+
+        // Kyu's slider images: End 
+
+    </script>
+    <!-- Kyu's JS: End -->
+
+                                        <!-- Kyu's updates Start -->
+
+    
+
         <div class="SECT1">
             <img src="/UA-Acadamia/imgs/Soon.gif" class="SECT11" alt="">
 
@@ -464,6 +547,7 @@
 
 
     <script src="/UA-Acadamia/stoic.js"></script>
+
 
 </body>
 

@@ -64,7 +64,7 @@
     80%{
         margin-top: -42px;
     }
-}
+} */
                                                                             /* Kyu: Pop Up Start */
                                                                             
 
@@ -75,12 +75,80 @@
     margin: 30px 10px 0 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+                                        /* Kyu's Updates: Start */
+
+/* Kyu's Loader: Start */
+.load{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.disappear{
+    animation: vanish 1s forwards;
+}
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/* Kyu's Loader: End */
+
+/* Kyu cursor: Start */
+
+.cursor{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #00beef;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+
+/* Kyu cursor: End */
+
+/* pop up button START*/
+#icon{
+    font-size: 40px;
+    height: 10%;
+    margin-top: 5px;
+    width: 100.5%;
+    text-align: end;
+    z-index: 400;
+}
+#icon span{
+    z-index: 400;
+    padding: 0px 8px;
+    border-radius: 70%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .1s all;
+}
+#icon span:hover{
+    z-index: 400;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+/* pop up button END */
+
 .popup{
+    z-index: 100;
+    display: none;
+    top: 0;
     border: 1px solid red;
+    margin: 15px auto;
     height: 95vh;
-    width: 95%;
-    position: absolute;
-    display: flex;
+    width: 100%;
+    display: block;
+    position: fixed;
     justify-content: center;
     padding-bottom: 7%;
     padding-right: 1%;
@@ -93,7 +161,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 1s;
-    display: none;
 }
 @keyframes popup {
     0%{
@@ -103,13 +170,16 @@
 }
 .popup-text{
     position: relative;
-    border: 3px ridge black;
-    /* box-shadow: 2px  2px 50px rgba(250, 146, 43, 0.427); */
+    border: 1px solid rgb(58, 57, 57);
+    box-shadow: 2px 3px 0px black;
     background-color: rgb(244, 162, 132);
-    padding: 60px;
-    height: 230px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
-    font-size: 40px;
+    font-size: 33px;
+    margin: 0px auto 0 auto;
     color: white;
     animation: popupname 3s;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -126,7 +196,78 @@
         color: rgba(0, 0, 0, 0);
     }
 }
-                                                                /* Kyu: Pop Up End */
+ /* Kyu: Pop Up End */
+
+ /* Kyu's MQ: Start */
+
+ @media only screen and (max-width: 766px) {
+
+    
+
+    .head-flex{
+        display: flex;
+        justify-content: center;
+    }
+    .head-two img{
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        margin-top: -130px;
+        /* border-bottom: 3px solid rgba(0, 0, 0, 0.163); */
+    }
+    .article-text{
+        width: 100%;
+        height: 80%;
+        padding: 50px;
+        padding-top: 30px;
+    }
+    .article-text p{
+        font-size: 18px;
+    }
+    .sec-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-5{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article-text button{
+        margin-top: 15%;
+        width: 30%;
+        height: 7.5%;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.757);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+    .article-imgs{
+        width: 100%;
+        height: 70%;
+        transition: all .5s;
+        cursor: zoom-in;
+    }
+}
+
+/* Kyu's MQ: End */
+
+                                        /* Kyu's Updates: Start */
+
+
 section{
     height: 90vh;
 }
@@ -246,7 +387,7 @@ article{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.article-imgs-1{
+ .article-imgs-1{
     animation: imgsOne 35s infinite;
 }
 .article-imgs-2{
@@ -321,7 +462,7 @@ article{
     80%{
         background-image: url('insperational/picTwo.jpeg');
     }
-}
+} 
 .sec-1{
     border-bottom: 1px solid rgba(187, 186, 186, 0.36);
     text-align: center;
@@ -390,7 +531,18 @@ article{
 /* Kyu: Home Page CSS Start */
 
 
+
+
+
+
+
+
+
+
+/* Sanje's code start*/
+
 /*|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | Sanje's code start*/
+
 
 /* sign-in page */
 
@@ -1130,6 +1282,7 @@ label{
 
 /* STOC'S FOOTER END */
 
+
 /* 
 @media only screen and (max-width: 766px) {
 
@@ -1192,4 +1345,5 @@ label{
         transition: all .5s;
         cursor: zoom-in;
     }
+
 
